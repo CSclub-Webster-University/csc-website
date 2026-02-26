@@ -12,7 +12,6 @@
   --color-emerald-600: #009900;
   --color-cyan-400: #00ffff;
 
-  /* Brutalist Theme Specs */
   --font-mono: 'Courier New', Courier, monospace;
   --font-sans: 'Arial', sans-serif;
 }
@@ -20,17 +19,14 @@
 @layer base {
   html {
     scroll-behavior: auto;
-    /* Removed smooth scrolling for more raw feel */
   }
 
   body {
     @apply bg-black text-white;
     margin: 0;
     font-family: var(--font-mono);
-    /* Force monospace everywhere by default */
   }
 
-  /* Make all borders sharp */
   *,
   *::before,
   *::after {
@@ -38,7 +34,6 @@
   }
 }
 
-/* Custom Brutalist Utilities */
 @layer utilities {
   .brutal-border {
     @apply border-2 border-white;
