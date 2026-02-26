@@ -1,25 +1,27 @@
 export default function Hero() {
     return (
-        <section id="hero" className="min-h-screen flex items-center justify-center pt-16 relative overflow-hidden pb-20">
-            {/* Background decoration */}
-            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-emerald-500/10 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
+        <section id="hero" className="min-h-screen flex items-center justify-center pt-16 relative bg-black">
+            {/* Grid Pattern Background */}
+            <div className="absolute inset-0 opacity-20" style={{ backgroundImage: 'linear-gradient(#333 1px, transparent 1px), linear-gradient(90deg, #333 1px, transparent 1px)', backgroundSize: '40px 40px' }}></div>
 
             <div className="container mx-auto px-4 text-center z-10">
-                <div className="inline-block mb-4 px-4 py-1.5 rounded-full border border-emerald-500/30 bg-emerald-500/10 text-emerald-400 text-sm font-semibold tracking-wide">
-                    Webster University
+                <div className="inline-block mb-8 px-4 py-2 brutal-border-green text-[#00ff00] font-bold uppercase tracking-widest text-sm bg-black brutal-shadow-green">
+                    System.out.println("Webster_University");
                 </div>
-                <h1 className="text-5xl md:text-7xl lg:text-8xl font-extrabold mb-6 tracking-tight leading-tight">
-                    Code. <span className="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-cyan-400">Create.</span> Connect.
+                <h1 className="text-5xl md:text-7xl lg:text-8xl font-black mb-8 uppercase tracking-tighter leading-none text-white drop-shadow-[4px_4px_0_rgba(0,255,0,1)]">
+                    &lt;CODE&gt;<br />CREATE<br />CONNECT /&gt;
                 </h1>
-                <p className="text-lg md:text-2xl text-slate-400 max-w-3xl mx-auto mb-12">
-                    Join the Computer Science Club. We are a community of passionate developers, hackers, and creators building the future together.
+                <p className="text-lg md:text-xl text-[#cccccc] max-w-3xl mx-auto mb-12 font-mono border-l-4 border-[#00ff00] pl-6 text-left bg-black/50 p-4">
+                    <span className="text-[#00ff00]">&gt;</span> Initialize Computer Science Club.<br />
+                    <span className="text-[#00ff00]">&gt;</span> Loading developers, hackers, and creators...<br />
+                    <span className="text-[#00ff00]">&gt;</span> Status: Ready to build the future.
                 </p>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-                    <a href="#contact" className="bg-emerald-500 hover:bg-emerald-600 text-slate-900 font-bold py-4 px-8 rounded-full transition-all transform hover:scale-105 hover:shadow-[0_0_20px_rgba(16,185,129,0.4)] text-lg">
-                        Join The Club
+                <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
+                    <a href="#contact" className="brutal-button brutal-shadow-hover w-full sm:w-auto text-center">
+                        [ JOIN_THE_CLUB ]
                     </a>
-                    <a href="#events" className="bg-slate-800 hover:bg-slate-700 text-slate-100 border border-slate-700 font-semibold py-4 px-8 rounded-full transition-all text-lg">
-                        Upcoming Events
+                    <a href="#events" className="px-6 py-3 bg-black text-white font-bold uppercase tracking-widest brutal-border hover:bg-white hover:text-black transition-none brutal-shadow-hover w-full sm:w-auto text-center">
+                        ./UPCOMING_EVENTS
                     </a>
                 </div>
             </div>
