@@ -1,1 +1,12 @@
-[]
+[
+    {
+        "id": 1,
+        "title": "N/A",
+        "date": "N/A",
+        "time": "N/A",
+        "location": "N/A",
+        "description": "N/A",
+        "type": "N/A",
+        "tags": []
+    }
+]
